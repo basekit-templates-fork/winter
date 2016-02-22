@@ -9,7 +9,7 @@
 .header-wrapper {
     padding: 40px 2%;
     @media @tablet {
-        padding: 20px 2%;
+        padding: 10px 2%;
     }
 }
 
@@ -51,8 +51,21 @@
     text-align: center;
 }
 
+.feature__content-inner-wrap {
+    @media @tablet {
+        background-color: fade(@color__feature-content--background, 90%);
+        max-width: 70%;
+    }
+    @media @mobile {
+        max-width: 100%;
+    }
+}
+
 .feature__background-image {
     height: 81vh;
+    @media @tablet {
+        height: 600px;
+    }
 }
 
 .feature__button:after {
