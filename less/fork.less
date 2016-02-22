@@ -3,7 +3,7 @@
 // -------------------------------------
 
 
-.bk-pt-default .extendednavigation__navigation-list {
+.bk-pt-default .header-extendednavigation {
     border-bottom: 1px solid @color-swatch7;
 }
 
@@ -224,4 +224,41 @@ textarea,
 
 .blogpostlist__read-more {
     padding: 15px;
+}
+
+
+// Ecom
+// -------------
+
+.ecomproductslist__listing-header {
+    @media @tablet {
+        text-align: center;
+    }
+}
+
+.ecombasketsummary__summary-title {
+    @media @mobile {
+        text-align: center;
+    }
+}
+
+.js-ecom-product-add-to-cart-btn {
+    background-color: @color-swatch2;
+    &:hover {
+        background-color: darken(@color-swatch2, 5%);
+    }
+}
+
+.widget__ecombasketsummary {
+    @media @tablet {
+        text-align: center;
+    }
+}
+
+.message {
+    margin-left: 0;
+    p {
+        display: inline-block;
+        margin-left: 10px;
+    }
 }
