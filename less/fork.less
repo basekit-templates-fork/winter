@@ -7,6 +7,16 @@
     border-bottom: 1px solid @color-swatch7;
 }
 
+.clicktocall__phone-number-link {
+    padding: 10px 20px;
+    @media @mobile {
+        color: @color__button--text;
+    }
+    &:hover {
+        background-color: @color__button--background;
+    }
+}
+
 
 // Header
 // -------------
@@ -154,6 +164,27 @@
         padding: 0;
         border-top: 0;
     }
+}
+
+
+// Forms
+// -------------
+
+input[type="search"],
+input[type="email"],
+input[type="password"],
+textarea,
+.input--single-line {
+    webkit-appearance: none;
+}
+
+.contact-form__form legend,
+.signup-form__form label,
+.blog-search__form label,
+.product-listing__legend {
+    border-bottom: 0;
+    font-size: @font__h2--font-size;
+    font-weight: @font__h2--font-weight;
 }
 
 
