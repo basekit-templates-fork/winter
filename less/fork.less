@@ -1,0 +1,129 @@
+// -------------------------------------
+// Winter: LESS > FORK CHANGES
+// -------------------------------------
+
+
+// Header
+// -------------
+
+.header-wrapper {
+    padding: 40px 2%;
+    @media @tablet {
+        padding: 20px 2%;
+    }
+}
+
+.header-content {
+    border-left: 0;
+}
+
+.header-content {
+    a,p,span {
+        color: white;
+    }
+}
+
+.header-extendednavigation {
+    display: block;
+    order: 0;
+}
+
+.header-companyname {
+    @media @tablet {
+        border-bottom: 0;
+    }
+}
+
+.header-content {
+    @media @tablet {
+        position: relative;
+        float: initial;
+        display: block;
+        top: 0;
+    }
+}
+
+
+// Feature
+// -------------
+
+.feature__content-wrap {
+    text-align: center;
+}
+
+.feature__background-image {
+    height: 81vh;
+}
+
+.feature__button:after {
+    color: @color-swatch2;
+}
+
+.feature__button {
+    &:hover {
+        &:after {
+            color: white;
+        }
+    }
+}
+
+
+// Navigation
+// -------------
+
+.extendednavigation__navigation-toggle {
+    display: none;
+    @media @tablet {
+        display: block;
+        background-color: @color-swatch1;
+    }
+}
+
+.navigation-list--children {
+    background-color: @color-swatch1;
+}
+
+.item-name--parent:after {
+    border-top-color: @color-swatch4;
+}
+
+.extendednavigation__navigation-item.selected > .item-name,
+.extendednavigation .navigation-item .item-name:hover {
+    background-color: @color-swatch7;
+    color: @font-swatch6-color;
+}
+
+.navigation-item .item-name {
+    padding: 8px 15px;
+}
+
+.navigation-toggle:after {
+    background-color: @color-swatch4;
+}
+
+.navigation-toggle:before {
+        background-color: @color-swatch4;
+        box-shadow: 0 6px 0 @color-swatch4;
+}
+
+
+// Footer
+// -------------
+
+.template-footer2 {
+    h1,h2,h3,h4,p,a,span {
+        color: white;
+    }
+}
+
+.template-footer2 {
+    background-color: @color__footer--background!important;
+}
+
+
+// Blog
+// -------------
+
+.blogpostlist__read-more {
+    padding: 15px;
+}
