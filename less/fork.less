@@ -101,9 +101,37 @@
     background-color: @color-swatch4;
 }
 
+.navigation-toggle:hover:before,
 .navigation-toggle:before {
-        background-color: @color-swatch4;
-        box-shadow: 0 6px 0 @color-swatch4;
+    background: @color-swatch4;
+    box-shadow: 0 6px 0 @color-swatch4;
+}
+
+.open .navigation-toggle:after,
+.open .navigation-toggle:before,
+.navigation-toggle:hover:after {
+    background: @color-swatch4;
+}
+
+.open .navigation-toggle:before {
+    box-shadow: 0 6px 0 #ffffff;
+}
+
+.open .navigation-toggle:after,
+.navigation-toggle:before,
+.navigation-toggle:after {
+    @media @tablet {
+        left: 50%;
+    }
+}
+
+.open .navigation-body,
+.navigation-list {
+    @media @tablet {
+        margin: 0;
+        padding: 0;
+        border-top: 0;
+    }
 }
 
 
